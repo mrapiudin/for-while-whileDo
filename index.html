@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>INI TUGAS MUHAMMAD RAPIUDIN PPLG 4 CICURUG 08</h1>
+    <script>
+        for(let go = 1; go <= 10; go++) {
+            console.log(go)
+        }
+
+
+        let serigala = 10;
+        while(serigala <=20) {
+            console.log(serigala);
+            serigala++;
+        }
+  
+
+        let harimau = 20;
+        do {
+        console.log(harimau);
+        harimau++;
+        } while (harimau < 30)
+
+
+        function hitungGaji (nama, gajipokok) {
+
+        let tunjangan = 0.2 * gajipokok;
+        let pajak = 0.15 * (gajipokok + tunjangan);
+        let gajibersih = gajipokok + tunjangan - pajak;
+
+        console.log(gajibersih)
+        console.log(gajipokok)
+        console.log(pajak)
+        console.log(tunjangan)
+        console.log(nama)
+        }
+        let nama = 'MUHAMMAD RAPIUDIN';
+        let gajipokok = 20000000;
+        hitungGaji(nama, gajipokok)
+
+
+        let jam = 1;
+        let menit = 30;
+        let detik = 40;  
+        let total = jam * 3600 + menit * 60 + detik;
+        console.log(total)
+
+
+        let DETIK = 7390;
+        let JAM = Math.floor (DETIK / 3600);
+        let SISA = DETIK % 3600;
+        let MENIT = Math.floor(SISA / 60);
+        let Detik = SISA % 60;
+        console.log('HASILNYA')
+        console.log(JAM + 'jam', MENIT + 'menit', Detik + 'detik' )
+
+        let tahunLahir = 2007;
+        let tahunSekarang = new Date().getFullYear();
+        let umur = tahunSekarang -  tahunLahir ;
+        console.log('anda berusia ' + umur+ ' tahun');
+
+        let lamaHidup = umur * 365;
+        console.log  (lamaHidup + ' HARI');
+    </script>
+</body>
+</html>
